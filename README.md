@@ -66,6 +66,7 @@ No menu do Jupyter: `Kernel > Restart & Run All`
 aurora-siger-telemetria/
 │
 ├── aurora_siger_telemetria.ipynb          # Notebook principal com todo o código
+├── telemetria.csv                         # Dataset com os cenários de telemetria
 ├── README.md                              # Documentação do projeto
 ├── requirements.txt                       # Dependências
 ├── Relatorio_Operacional_Pre_Decolagem.pdf  # Relatório em PDF para entrega
@@ -75,29 +76,31 @@ aurora-siger-telemetria/
 
 ---
 
-## Saída esperada
+## Prints da execução
 
-Ao rodar o cenário normal, o resultado deve ser:
+### Verificação de telemetria — cenário normal
 
-```
-Verificacao de telemetria — Telemetria Normal — Aurora Siger
--------------------------------------------------------
-  OK     | Temperatura Interna: 22 C (faixa: 18 a 27)
-  OK     | Temperatura Externa: -85 C (faixa: -120 a 120)
-  OK     | Pressao Tanque LOX: 47 psi (faixa: 40 a 55)
-  OK     | Temperatura do LOX: -207 C (faixa: -215 a -200)
-  OK     | Integridade Estrutural: 1
-  OK     | Nivel de Energia: 87 % (faixa: 75 a 100)
-  OK     | Status Modulos Criticos: 1
--------------------------------------------------------
-RESULTADO: PRONTO PARA DECOLAR — todos os sistemas operacionais.
-```
+![Print 01 — Telemetria Normal](print_01_telemetria_normal.png)
 
-Ao rodar o cenário com falhas:
+### Simulação de anomalia — cenário com falhas
 
-```
-RESULTADO: DECOLAGEM ABORTADA — corrija os alertas antes de prosseguir.
-```
+![Print 02 — Simulação de Anomalia](print_02_simulacao_anomalia.png)
+
+### Análise energética
+
+![Print 03 — Análise Energética](print_03_analise_energetica.png)
+
+### Gráfico de telemetria — valores vs. faixas seguras
+
+![Gráfico Telemetria](telemetria_grafico.png)
+
+### Gráfico de distribuição energética
+
+![Gráfico Energia](energia_grafico.png)
+
+### Relatório final consolidado
+
+![Print 04 — Relatório Final](print_04_relatorio_final.png)
 
 ---
 
