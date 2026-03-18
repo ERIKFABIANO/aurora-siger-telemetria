@@ -40,7 +40,7 @@ Os parâmetros de telemetria foram definidos com base em dados reais:
 
 **1. Clone o repositório**
 ```bash
-git clone https://github.com/ERIKFABIANO/aurora-siger-telemetria.git
+git clone https://github.com/ERIKFABIANO/aurora-siger-telemetria
 cd aurora-siger-telemetria
 ```
 
